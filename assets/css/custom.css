@@ -45,8 +45,23 @@ li:hover{
     0% {
         -moz-transform: scale(1) rotate(0) translateX(0);
     }
+    70% {
+        -moz-transform: scale(1.2) rotate(-65deg) translateX(-20px);
+    }
     100% {
-        transform: transform: scale(1.2) rotate(-15deg) translateX(-20px);
+        -moz-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+}
+
+@-moz-keyframes spaceshipUp {
+    0% {
+        -moz-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+    50% {
+        -moz-transform: scale(1) rotate(-45deg) translateX(-20px) translateY(-9px);
+    }
+    100% {
+        -moz-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
     }
 }
 
@@ -54,8 +69,23 @@ li:hover{
     0% {
         transform: scale(1) rotate(0) translateX(0);
     }
+    70% {
+        transform: scale(1.2) rotate(-65deg) translateX(-20px);
+    }
     100% {
-        transform: transform: scale(1.2) rotate(-15deg) translateX(-20px);
+        transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+}
+
+@keyframes spaceshipUp {
+    0% {
+        transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+    50% {
+        transform: scale(1) rotate(-45deg) translateX(-20px) translateY(-9px);
+    }
+    100% {
+        transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
     }
 }
 
