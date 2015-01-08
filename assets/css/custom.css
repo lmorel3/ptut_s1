@@ -2,11 +2,88 @@
 	padding-top: 100px;
 }
 
-#requirements li:hover{
+li:hover{
 	background-color: #2C3E50;
 	color: #FFFFFF;
 	cursor: pointer;
 }
+
+#jumbo .jumbotron{
+}
+
+#jumbo h1, #jumbo p{
+}
+
+#spaceship{ overflow: visible; }
+
+@-webkit-keyframes spaceshipAnim {
+    0% {
+        -webkit-transform: scale(1) rotate(0) translateX(0);
+    }
+    70% {
+        -webkit-transform: scale(1.2) rotate(-65deg) translateX(-20px);
+    }
+    100% {
+        -webkit-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+}
+
+
+@-webkit-keyframes spaceshipUp {
+    0% {
+        -webkit-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+    50% {
+        -webkit-transform: scale(1) rotate(-45deg) translateX(-20px) translateY(-9px);
+    }
+    100% {
+        -webkit-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+    }
+}
+
+@-moz-keyframes spaceshipAnim {
+    0% {
+        -moz-transform: scale(1) rotate(0) translateX(0);
+    }
+    100% {
+        transform: transform: scale(1.2) rotate(-15deg) translateX(-20px);
+    }
+}
+
+@-keyframes spaceshipAnim {
+    0% {
+        transform: scale(1) rotate(0) translateX(0);
+    }
+    100% {
+        transform: transform: scale(1.2) rotate(-15deg) translateX(-20px);
+    }
+}
+
+#rocket-maskgroup.loadAnim{
+    -webkit-animation: spaceshipAnim 1.2s;
+    -moz-animation: spaceshipAnim 1.2s;
+    animation: spaceshipAnim 1.2s;
+}
+
+#rocket-maskgroup.animate{
+    -webkit-animation: spaceshipUp linear 1.2s;
+    -moz-animation: spaceshipUp linear 1.2s;
+    animation: spaceshipUp linear 1.2s;
+}
+
+#jumbo .visual:hover{
+    cursor: pointer;
+}
+
+#jumbo .visual{
+    display: inline-block;
+    float: right;
+}
+
+.step .page-header{ padding: 0; margin: 0; }
+.step_all .page-header{ text-align: center; padding: 0; margin: 0 0 1em 0; }
+
+.not_shown{ display: none; }
 
 footer{
 	height: 50vh;
