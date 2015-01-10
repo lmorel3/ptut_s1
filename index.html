@@ -28,17 +28,17 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Exemples <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a class="page-scroll" href="#example_docker">Docker</a></li>
+                <li><a class="page-scroll" href="#docker">Docker</a></li>
                 <li class="divider"></li>
-                <li><a class="page-scroll" href="#example_docker">Bankin'</a></li>
-                <li><a class="page-scroll" href="#example_docker">Captain Train</a></li>
-                <li><a class="page-scroll" href="#example_docker">BlablaCar</a></li>
+                <li><a class="page-scroll" href="#bankin">Bankin'</a></li>
+                <li><a class="page-scroll" href="#capitaine_train">Captain Train</a></li>
+                <li><a class="page-scroll" href="#blablacar">BlablaCar</a></li>
               </ul>
             </li>
 
           </ul>
 
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right authors">
             <li><a href="#">Laurent MOREL</a></li>
             <li><a href="#">Vahic LAYDIER</a></li>
             <li><a href="#">Sébastien RIGAUD</a></li>
@@ -54,53 +54,71 @@
       <div class="row" id="jumbo">
 
         <div class="col-lg-12">
-          <div class="bs-component">
-            <div class="jumbotron">
-              <h1>Comment lancer sa startup ?</h1>
-              <div class="visual">
-                  <svg version="1.1" id="spaceship" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                    <circle id="bg" fill="#33495F" cx="50" cy="50" r="50"></circle>
-                    <g id="Stars" clip-path="url(#starmask)">
-                    <path id="star0" opacity="0.2" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
-                    <path id="star1" opacity="0.1" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
-                    <path id="star2" opacity="0.1" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
-                    </g>
-                    <clipPath id="starmask">
-                    <circle cx="50" cy="50" r="50"></circle>
-                    </clipPath>
-                    <clipPath id="rocketmask2">
-                    <path id="rocketmask1" d="M100,50c0,27.614-22.387,50-50,50C22.386,100,0,77.614,0,50S22.386,0,50,0c14.117,0,50,0,50,0S100,36.503,100,50z" transform=" translate(0,0)"></path>
-                    </clipPath>
-                    <g id="rocket-maskgroup">
-                    <g id="rocket-raw" clip-path="url(#rocketmask2)" transform=" translate(0,0)">
-                    <path id="det7" fill="#E94B35" d="M100,0.1c-0.156,0.018-0.117,0.058-0.1-0.1C76.584,2.979,63.361,12.281,55.865,22.035c-0.268,0.349-0.528,0.698-0.782,1.047c-0.002,0.003-0.005,0.007-0.008,0.01C47.015,34.196,46.087,45.812,46,49h-1l-1,3l4,4l3-1v-1c1.152-0.021,3.741-0.111,7.066-0.773l0.002,0.002C58.797,53.047,59,53.305,59,57c0,4.062,0,6.609,0,9c0,1.809,0.943,2.497,1.945,1.494c2.423-2.428,3.003-3.023,8.5-8.528c4.16-4.167,4.676-6.595,2.957-11.059C83.953,41.369,96.432,27.888,100,0.1z"></path>
-                    <path id="det6" fill="#C23824" d="M48,56l-4-4l1-3h2l4,4v2L48,56z M52,28c-1.718-0.69-2-1-4-1s-4.183,1.38-6.861,4.063c-4.254,4.259-4.85,4.839-8.516,8.508C31.425,40.771,33.263,41,36,41c5.233,0,9.297-0.125,10.791,1.42C48.764,44.46,52,28,52,28z"></path>
-                    <path id="det5" fill="#C23824" d="M100,0C100.1,0,100,0,100,0c-0.639,4.973-1.566,9.579-2.721,13.678c-1.049-1.97-2.562-4.364-4.5-6.272c-2.151-2.12-4.812-3.632-6.826-4.585C91.979,1.091,96.783,0.412,100,0z"></path>
-                    <path id="det4" opacity="0.3" fill="#FFFFFF" enable-background="new    " d="M72.402,47.907c1.719,4.463,1.312,6.788-2.854,10.954c-0.844,0.844-7.828,7.859-8.604,8.633C59.941,68.496,59.033,67.809,59,66c-0.01-0.521,0.003,0.021,0-0.652c3-3,9.689-8.938,11-11.348c0.768-1.411,0.352-3.654,0-5c-3.312,1.76-11.516,4.094-11.932,4.229l0,0C54.906,53.875,52.467,53.943,51,54v-0.656c0,0,29.975-9.663,49-53.344c0.014,0-0.064,0.008,0,0C96.406,28.047,83.953,41.369,72.402,47.907z"></path>
-                    <g id="det3">
-                    <path fill="#FFFFFF" d="M77.5,28c-3.584,0-6.5-2.916-6.5-6.5s2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5S81.084,28,77.5,28z"></path>
-                    <path fill="#C23824" d="M77.5,16c3.037,0,5.5,2.462,5.5,5.5S80.537,27,77.5,27S72,24.538,72,21.5S74.463,16,77.5,16 M77.5,14c-4.137,0-7.5,3.364-7.5,7.5s3.363,7.5,7.5,7.5s7.5-3.364,7.5-7.5S81.637,14,77.5,14L77.5,14z"></path>
-                    </g>
-                    <path id="det2" fill="#D7DCDE" d="M44,52l4,4L13,92l-6-6L44,52z"></path>
-                    <path id="det1" fill="#F7F7F7" d="M43.875,52l2,2L7.5,91.5l-3-3L43.875,52z"></path>
-                    </g>
-                    </g>
-                </svg>
-              </div>
-              <p>Par la suite, cliquez sur les différents éléments pour afficher plus d'informations.</p>
-              <p><a class="btn btn-primary btn-lg page-scroll" href="#requirements">Commencer</a></p>
+          <div class="jumbotron">
+            <h1>Comment lancer sa startup ?</h1>
+            <div class="visual">
+                <svg version="1.1" id="spaceship" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                  <circle id="bg" fill="#33495F" cx="50" cy="50" r="50"></circle>
+                  <g id="Stars" clip-path="url(#starmask)">
+                  <path id="star0" opacity="0.2" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
+                  <path id="star1" opacity="0.1" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
+                  <path id="star2" opacity="0.1" fill="#f6f8f8" enable-background="new    " d="M91,4.5c2.55-0.45,4.051-1.95,4.5-4.5c0.45,2.55,1.951,4.05,4.5,4.5c-2.549,0.451-4.05,1.95-4.5,4.5C95.051,6.45,93.55,4.951,91,4.5z" transform=""></path>
+                  </g>
+                  <clipPath id="starmask">
+                  <circle cx="50" cy="50" r="50"></circle>
+                  </clipPath>
+                  <clipPath id="rocketmask2">
+                  <path id="rocketmask1" d="M100,50c0,27.614-22.387,50-50,50C22.386,100,0,77.614,0,50S22.386,0,50,0c14.117,0,50,0,50,0S100,36.503,100,50z" transform=" translate(0,0)"></path>
+                  </clipPath>
+                  <g id="rocket-maskgroup">
+                  <g id="rocket-raw" clip-path="url(#rocketmask2)" transform=" translate(0,0)">
+                  <path id="det7" fill="#E94B35" d="M100,0.1c-0.156,0.018-0.117,0.058-0.1-0.1C76.584,2.979,63.361,12.281,55.865,22.035c-0.268,0.349-0.528,0.698-0.782,1.047c-0.002,0.003-0.005,0.007-0.008,0.01C47.015,34.196,46.087,45.812,46,49h-1l-1,3l4,4l3-1v-1c1.152-0.021,3.741-0.111,7.066-0.773l0.002,0.002C58.797,53.047,59,53.305,59,57c0,4.062,0,6.609,0,9c0,1.809,0.943,2.497,1.945,1.494c2.423-2.428,3.003-3.023,8.5-8.528c4.16-4.167,4.676-6.595,2.957-11.059C83.953,41.369,96.432,27.888,100,0.1z"></path>
+                  <path id="det6" fill="#C23824" d="M48,56l-4-4l1-3h2l4,4v2L48,56z M52,28c-1.718-0.69-2-1-4-1s-4.183,1.38-6.861,4.063c-4.254,4.259-4.85,4.839-8.516,8.508C31.425,40.771,33.263,41,36,41c5.233,0,9.297-0.125,10.791,1.42C48.764,44.46,52,28,52,28z"></path>
+                  <path id="det5" fill="#C23824" d="M100,0C100.1,0,100,0,100,0c-0.639,4.973-1.566,9.579-2.721,13.678c-1.049-1.97-2.562-4.364-4.5-6.272c-2.151-2.12-4.812-3.632-6.826-4.585C91.979,1.091,96.783,0.412,100,0z"></path>
+                  <path id="det4" opacity="0.3" fill="#FFFFFF" enable-background="new    " d="M72.402,47.907c1.719,4.463,1.312,6.788-2.854,10.954c-0.844,0.844-7.828,7.859-8.604,8.633C59.941,68.496,59.033,67.809,59,66c-0.01-0.521,0.003,0.021,0-0.652c3-3,9.689-8.938,11-11.348c0.768-1.411,0.352-3.654,0-5c-3.312,1.76-11.516,4.094-11.932,4.229l0,0C54.906,53.875,52.467,53.943,51,54v-0.656c0,0,29.975-9.663,49-53.344c0.014,0-0.064,0.008,0,0C96.406,28.047,83.953,41.369,72.402,47.907z"></path>
+                  <g id="det3">
+                  <path fill="#FFFFFF" d="M77.5,28c-3.584,0-6.5-2.916-6.5-6.5s2.916-6.5,6.5-6.5s6.5,2.916,6.5,6.5S81.084,28,77.5,28z"></path>
+                  <path fill="#C23824" d="M77.5,16c3.037,0,5.5,2.462,5.5,5.5S80.537,27,77.5,27S72,24.538,72,21.5S74.463,16,77.5,16 M77.5,14c-4.137,0-7.5,3.364-7.5,7.5s3.363,7.5,7.5,7.5s7.5-3.364,7.5-7.5S81.637,14,77.5,14L77.5,14z"></path>
+                  </g>
+                  <path id="det2" fill="#D7DCDE" d="M44,52l4,4L13,92l-6-6L44,52z"></path>
+                  <path id="det1" fill="#F7F7F7" d="M43.875,52l2,2L7.5,91.5l-3-3L43.875,52z"></path>
+                  </g>
+                  </g>
+              </svg>
             </div>
-          <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div></div>
+            <p>Par la suite, cliquez sur les différents éléments pour afficher plus d'informations.</p>
+            <p><a class="btn btn-primary btn-lg page-scroll" href="#requirements">Commencer</a></p>
+          </div>
         </div>
 
       </div>
 
+    <div id="definition" class="row step">
+
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1>Une startup, c'est quoi ?</h1>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>Auteur <cite title="Source Title">Source</cite></small>
+              </blockquote>
+          </div>
+
+      </div>
 
      <div id="requirements" class="row step">
 
           <div class="col-lg-12">
               <div class="page-header">
-                <h2 id="type">Prérequis</h2>
+                <h1>Comment ?</h1>
+                <h2>Prérequis</h2>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-success" style="width: 30%"></div>
+                </div>
               </div>
             </div>
 
@@ -133,7 +151,6 @@
 							<p class="list-group-item-text">Etre sur un marché assez ouvert <span class="not_shown">ou inexistant jusque lors.</span></p>
 						  </li>
 						</ul>
-					  <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
 					</div>
 
 			  </div>
@@ -166,7 +183,6 @@
 							<p class="list-group-item-text">Participer à des concours <span class="not_shown">comme Start-Up Contest, SFR Jeunes Talents Start-Up, Concours Mondial d’Innovation, 100 jours pour entreprendre.</span></p>
 						  </li>
 						</ul>
-					  <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
 					</div>
 
 				</div>
@@ -199,7 +215,6 @@
 							<p class="list-group-item-text">Etre présent sur les plateformes et supports modernes <span class="not_shown">comme les tablettes, smartphones mais aussi les sites d'entreprenariat.</span></p>
 						  </li>
 						</ul>
-					  <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
 					</div>
 
 				</div>
@@ -214,7 +229,10 @@
 
           <div class="col-lg-12">
               <div class="page-header">
-                <h2 id="type">Prérequis</h2>
+                <h2 id="type">Développement</h2>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+                </div>
               </div>
             </div>
 
@@ -231,7 +249,7 @@
                   <div class="col-lg-12">
                       <div class="page-header">
                         <h3>Concrétisation</h3>
-                        <h5></h5>
+                        <h5>...</h5>
                       </div>
                   </div>
 
@@ -247,7 +265,6 @@
                             <p class="list-group-item-text">Préparer le lancement<span class="not_shown"></span></p>
                           </li>
                         </ul>
-                      <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
                     </div>
 
               </div>
@@ -280,7 +297,6 @@
                             <p class="list-group-item-text">Rémunération<span class="not_shown"> en pensant à l'avenir de la startup et au besoin de fonds actuels.</span></p>
                           </li>
                         </ul>
-                      <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
                     </div>
 
                 </div>
@@ -307,13 +323,12 @@
                             <p class="list-group-item-text">Agrandir son réseau<span class="not_shown"> et envisager la collaboration pour se développer plus vite et plus efficacement.</span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"Envisager l'international<span class="not_shown"> pour toucher plus de monde et se faire connaitre.</span></p>
+                            <p class="list-group-item-text">Envisager l'international<span class="not_shown"> pour toucher plus de monde et se faire connaitre.</span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown"></span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"></span></p>
                           </li>
                         </ul>
-                      <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
                     </div>
 
                 </div>
@@ -331,6 +346,9 @@
           <div class="col-lg-12">
               <div class="page-header">
                 <h2 id="type">Finalité</h2>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                </div>
               </div>
             </div>
 
@@ -347,23 +365,22 @@
                   <div class="col-lg-12">
                       <div class="page-header">
                         <h3>Entrer en bourse</h3>
-                        <h5></h5>
+                        <h5>...</h5>
                       </div>
                   </div>
 
                     <div class="col-lg-12">
                         <ul class="list-group">
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown">...</span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"> ...</span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"></p>
+                            <p class="list-group-item-text">...</p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown">...</span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"> ...</span></p>
                           </li>
                         </ul>
-                      <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
                     </div>
 
               </div>
@@ -384,19 +401,18 @@
                     <div class="col-lg-12">
                         <ul class="list-group">
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown"></span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"></span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown"><br></span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"><br></span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown"></span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"></span></p>
                           </li>
                           <li class="list-group-item">
-                            <p class="list-group-item-text"><span class="not_shown"></span></p>
+                            <p class="list-group-item-text">...<span class="not_shown"></span></p>
                           </li>
                         </ul>
-                      <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
                     </div>
 
                 </div>
@@ -406,6 +422,185 @@
 
         </div>
 
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+
+              <div class="alert alert-info">
+                <strong>Vous avez désormais comment une startup est lancée, développée et comment elle peut se "concrétiser" !</strong><br>
+                <a href="#example" class="page-scroll btn btn-danger btn-xs">Cliquez ici</a> pour voir des exemples de startup ayant réussies toutes ces phases.
+              </div>
+
+          </div>
+        </div>
+
+        <div id="example" class="row">
+          <div class="col-lg-12 page-header">
+            <h1>Exemples</h1>
+          </div>
+        </div>
+
+        <div id="docker" class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Docker <span class="flag flag_en"></span></h3>
+            </div>
+            <div class="panel-body">
+              <div class="col-lg-4 example">
+                <img src="./assets/img/logo_docker.png" />
+                <h3>En chiffres</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">14e</span>
+                    Projet le plus populaire sur GitHub (en 2013)
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">300</span>
+                    Contributeurs
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">+ de 3 millions</span>
+                    Téléchargements
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">15 millions de $</span>
+                    En Juin 2014, levée de fonds
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <h3>Démarrage</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Développement</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Situation actuelle</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="bankin" class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Bankin <span class="flag flag_fr"></span></h3>
+            </div>
+            <div class="panel-body">
+              <div class="col-lg-4 example">
+                <img src="./assets/img/logo_bankin.png" />
+                <h3>En chiffres</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">14e</span>
+                    Projet le plus populaire sur GitHub (en 2013)
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">300</span>
+                    Contributeurs
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">+ de 3 millions</span>
+                    Téléchargements
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">15 millions de $</span>
+                    En Juin 2014, levée de fonds
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <h3>Démarrage</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Développement</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Situation actuelle</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="capitaine_train" class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Capitaine Train <span class="flag flag_fr"></span></h3>
+            </div>
+            <div class="panel-body">
+              <div class="col-lg-4 example">
+                <img src="./assets/img/logo_capitaine-train.png" />
+                <h3>En chiffres</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">14e</span>
+                    Projet le plus populaire sur GitHub (en 2013)
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">300</span>
+                    Contributeurs
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">+ de 3 millions</span>
+                    Téléchargements
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">15 millions de $</span>
+                    En Juin 2014, levée de fonds
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <h3>Démarrage</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Développement</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Situation actuelle</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="blablacar" class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">BlaBlaCar <span class="flag flag_fr"></span></h3>
+            </div>
+            <div class="panel-body">
+              <div class="col-lg-4 example">
+                <img src="./assets/img/logo_blablacar.png" />
+                <h3>En chiffres</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">14e</span>
+                    Projet le plus populaire sur GitHub (en 2013)
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">300</span>
+                    Contributeurs
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">+ de 3 millions</span>
+                    Téléchargements
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">15 millions de $</span>
+                    En Juin 2014, levée de fonds
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <h3>Démarrage</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Développement</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <h3>Situation actuelle</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
 
