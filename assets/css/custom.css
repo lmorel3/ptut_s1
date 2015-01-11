@@ -8,6 +8,8 @@ li:hover{
 	cursor: pointer;
 }
 
+.list-group-item { text-align: left; }
+
 .authors li a {
   font-size: 0.85em;
   padding-left: 0;
