@@ -41,16 +41,17 @@ jQuery(document).ready(function($){
     /* ANIMATION */
     $rocket = new Object();
     var timeoutID;
-    function endAnim() { $rocket.attr("class", ""); window.clearTimeout(timeoutID); }
+    function endAnim() { $rocket.attr("class", "endAnim"); window.clearTimeout(timeoutID); }
 
     $('#jumbo .visual').mouseenter(function(){
-        $rocket.attr("class", "animate").delay(1200);
+        $rocket.attr("class", "animate endAnim").delay(1200);
         timeoutID = window.setTimeout(endAnim, 1200);
     });
 
     $(window).on("load", function(){
         $rocket = $('g#rocket-maskgroup');
         $rocket.attr("class", "loadAnim");
+        timeoutID = window.setTimeout(endAnim, 1180);
     });
 
 });

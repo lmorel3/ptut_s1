@@ -125,6 +125,12 @@ li:hover{
     animation: spaceshipAnim 1.2s;
 }
 
+#rocket-maskgroup.endAnim{
+	-webkit-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+	-moz-transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+	transform: scale(1.2) rotate(-45deg) translateX(-45px) translateY(3px);
+}
+
 #rocket-maskgroup.animate{
     -webkit-animation: spaceshipUp linear 1.2s;
     -moz-animation: spaceshipUp linear 1.2s;
