@@ -149,6 +149,8 @@ li:hover{
 .step .page-header{ padding: 0; margin: 0; }
 .step_all .page-header{ text-align: center; padding: 0; margin: 0 0 1em 0; }
 
+#finalite_all{ margin-bottom: 5em; }
+
 .not_shown{ display: none; }
 
 footer{

@@ -19,9 +19,13 @@ jQuery(document).ready(function($){
     });
 
     /* MARGIN */
-    var margin_top = $(window).height() - (90 + $('#jumbo').height() + $('#definition').height());
-    $('#requirements').css('margin-top', margin_top);
-    $('#example').css('margin-top', margin_top-90);
+
+    $w_height = $(window).height();
+    if($w_height > 768) {
+        var margin_top = $w_height - (90 + $('#jumbo').height() + $('#definition').height());
+        $('#requirements').css('margin-top', margin_top);
+        $('#example').css('margin-top', margin_top-90);
+    }
 
     /* BASE */
     $('.bs-component [data-toggle="popover"]').popover();
