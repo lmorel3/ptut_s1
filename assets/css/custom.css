@@ -155,6 +155,20 @@ li:hover{
 
 .not_shown{ display: none; }
 
-footer{
-	height: 50vh;
+footer img{
+	height: 50px;
+    float: right;
+}
+
+footer h4{
+    margin-top: 0;
+}
+
+footer li{
+    margin-bottom: 0.2em;
+}
+
+footer li:hover, footer a:hover{
+    background-color: transparent;
+    color: inherit;
 }
